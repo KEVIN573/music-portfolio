@@ -49,7 +49,7 @@ jQuery(document).ready(function(){
 	
 	jQuery(window).load('body', function(){
 		setTimeout(function(){
-        jQuery('.arlo_tm_preloader').addClass('loaded');
+        jQuery('.preloader').addClass('loaded');
     }, 1000);
 	});
 	
@@ -69,7 +69,7 @@ function arlo_tm_hamburger(){
 	"use strict";
 	
 	let hamburger 		= jQuery('.hamburger');
-	let mobileMenu		= jQuery('.arlo_tm_mobile_menu_wrap');
+	let mobileMenu		= jQuery('.mobile-menu-wrap');
 	
 	hamburger.on('click',function(){
 		let element 	= jQuery(this);
@@ -219,8 +219,8 @@ function arlo_tm_portfolio(){
 	if(jQuery().isotope) {
 
 		// Needed letiables
-		let list 		 = jQuery('.arlo_tm_portfolio_list');
-		let filter		 = jQuery('.arlo_tm_portfolio_filter');
+		let list  = jQuery('.arlo_tm_portfolio_list');
+		let filter = jQuery('.arlo_tm_portfolio_filter');
 
 		if(filter.length){
 			// Isotope Filter 
@@ -279,7 +279,7 @@ function arlo_tm_anchor(){
 	
 	"use strict";
 	
-	jQuery('.anchor_nav').onePageNav();
+	jQuery('.nav-list').onePageNav();
 	
 	let scrollOffset = 0;
 	
