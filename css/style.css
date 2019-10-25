@@ -385,7 +385,7 @@ img.svg{
 /*	03) ARLO ABOUT
 /*---------------------------------------------------*/
 
-.arlo_tm_title_holder{
+.title-holder{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -395,11 +395,11 @@ img.svg{
 	position: relative;
 }
 
-.arlo_tm_title_holder.contact{
+.title-holder.contact{
 	padding-bottom: 93px;
 }
 
-.arlo_tm_title_holder:before{
+.title-holder:before{
 	position: absolute;
 	content: "";
 	width: 6px;
@@ -407,7 +407,7 @@ img.svg{
 	background-color: #E3872D;
 	top: 2px;
 }
-.arlo_tm_title_holder h3{
+.title-holder h3{
 	font-size: 50px;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -415,7 +415,7 @@ img.svg{
 	padding-left: 25px;
 	line-height: 1;
 }
-.arlo_tm_title_holder span{
+.title-holder span{
 	font-size: 16px;
 	font-family: "Montserrat";
 	padding-left: 25px;
@@ -482,7 +482,7 @@ img.svg{
 	margin-bottom: 120px;
 }
 
-.arlo_tm_main_title_holder.about{
+.arlo_tm_main_title_holder .about{
 	text-align: left;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -494,7 +494,9 @@ img.svg{
 	font-size: 30px;
 	line-height: 1;
 }
-.arlo_tm_main_title_holder h3 span{position: relative;}
+.arlo_tm_main_title_holder h3 span{
+	position: relative;
+}
 .arlo_tm_main_title_holder h3 span:before{
     position: absolute;
 	content: "";
@@ -531,7 +533,9 @@ img.svg{
 	padding-right: 40px;
 
 }
-.arlo_tm_about_wrap .leftbox .about_image_wrap{position: relative;}
+.arlo_tm_about_wrap .leftbox .about_image_wrap{
+	position: relative;
+}
 .arlo_tm_about_wrap .leftbox .about_image_wrap .image{
 	position: absolute;
 	z-index: 2;
@@ -571,9 +575,17 @@ img.svg{
 	font-size: 15px;
 	font-weight: 600;
 }
-.arlo_tm_about_wrap .definition{margin-bottom: 15px;}
-.arlo_tm_about_wrap .definition p{color: #333;}
-.arlo_tm_about_wrap .definition p strong{color: #E3872D;}
+.arlo_tm_about_wrap .definition{
+	margin-bottom: 15px;
+}
+.arlo_tm_about_wrap .definition p{
+	color: #333;
+}
+.arlo_tm_about_wrap .definition p a{
+	color: #E3872D;
+	text-decoration: none;
+	font-weight: 600;
+}
 
 .arlo_tm_about_wrap .about_short_contact_wrap{
 	width: 100%;
@@ -582,7 +594,9 @@ img.svg{
 	float: left;
 	margin-bottom: 13px;
 }
-.arlo_tm_about_wrap .arlo_tm_main_title_holder{margin-bottom: 40px;}
+.arlo_tm_about_wrap .arlo_tm_main_title_holder{
+	margin-bottom: 40px;
+}
 .arlo_tm_about_wrap .about_short_contact_wrap ul{
 	margin: 0px;
 	list-style-type: none;
@@ -887,7 +901,7 @@ img.svg{
 /*	04) ARLO SERVICES
 /*---------------------------------------------------*/
 
-.arlo_tm_services_wrap{
+.videos-wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -897,46 +911,52 @@ img.svg{
 	text-align: left;
 
 }
-.arlo_tm_services_wrap .arlo_tm_title_holder_wrap{
+.videos-wrap .arlo_title_holder_wrap{
 	margin-bottom: 93px;
 }
 
-.arlo_tm_services_wrap .list_wrap{
+.videos-wrap .videos-container{
+	display: grid;
+	grid-template-rows: 300px 300px; 
+	grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+	grid-gap: 2rem;
+	border: 2px solid red;
+	margin: 0px 30px 0px 30px;
 	width: 100%;
 	height: auto;
-	clear: both;
-	float: left;
 }
-.arlo_tm_services_wrap .list_wrap ul{
-	margin: 0px 0px 0px -30px;
+
+.videos-wrap .list_wrap ul{
+	/* margin: 0px 0px 0px -30px; */
 	list-style-type: none;
 }
-.arlo_tm_services_wrap .list_wrap ul li{
+.videos-wrap .list_wrap ul li{
 	margin: 0px 0px 30px 0px;
 	float: left;
 	width: 33.3333%;
+	height: 300px;
 	padding-left: 30px;
+	border: 2px solid brown; 
+/*	width: 90vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+	grid-row-gap: 2rem;
+	grid-column-gap: 50px; */
 }
 
-.arlo_tm_services_wrap .list_wrap ul li a{
+.videos-wrap .list_wrap ul li a{
 	text-decoration: none;
 	cursor: pointer;
 	
 }
 
-.arlo_tm_services_wrap .list_wrap ul li a i{
+.videos-wrap .list_wrap ul li a i{
 	font-size: 1.3rem;
 	color: #041230;
 }
-.arlo_tm_services_wrap .list_wrap ul li .inner{
-	width: 100%;
-	height: 200px;
-	clear: both;
-	float: left;
+.videos-wrap .videos-container .inner{
 	position: relative;
-	box-shadow: 0 0 20px rgba(0,0,0,.1);
-	padding: 40px 40px 33px 40px;
-	top: 0px;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
@@ -949,7 +969,7 @@ img.svg{
 	
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner .icon{
+.videos-wrap .videos-container .inner .icon{
 	background: #E3872D;
 	width: 50px;
 	height: 50px;
@@ -961,37 +981,37 @@ img.svg{
 }
 
 
-.arlo_tm_services_wrap .list_wrap ul li .inner1{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music1.jpg) no-repeat center;
+.videos-wrap .videos-container .inner1{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music7.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner2{
+.videos-wrap .videos-container .inner2{
 	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music2.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner3{
+.videos-wrap .videos-container .inner3{
 	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music3.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner4{
+.videos-wrap .videos-container .inner4{
 	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music4.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner5{
+.videos-wrap .videos-container .inner5{
 	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music5.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner6{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music6.jpg) no-repeat center;
+.videos-wrap .videos-container .inner6{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music1.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.arlo_tm_services_wrap .list_wrap ul li .inner:hover{
+.videos-wrap .videos-container .inner:hover{
 	top: -5px;
 }
 
@@ -1065,7 +1085,9 @@ img.svg{
 /*	06) ARLO PORTFOLIO
 /*---------------------------------------------------*/
 
-.arlo_tm_title_holder.portfolio{padding-bottom: 90px;}
+.title-holder .portfolio{
+	padding-bottom: 90px;
+}
 .arlo_tm_portfolio_wrapper_all{
 	width: 100%;
 	height: auto;
@@ -2393,7 +2415,7 @@ img.svg{
 	.arlo_tm_about_wrap .leftbox{padding-right: 0px;}
 }
 @media (max-width: 1200px) {
-	.arlo_tm_services_wrap .list_wrap ul li{width: 50%;}
+	.videos-wrap .list_wrap ul li{width: 50%;}
 	#popup-blog .close{right: 0px;}
 	.arlo_tm_list_wrap > ul.total > li{width: 50%;}
 	.arlo_tm_about_wrap .leftbox{display: none;}
@@ -2456,10 +2478,10 @@ img.svg{
 @media (max-width: 768px) {
 	.arlo_tm_hero_header_wrap .name_holder h3{font-size: 40px;}
 	.arlo_tm_hero_header_wrap .text_typing p{font-size: 21px;}
-	.arlo_tm_title_holder h3{font-size: 45px;}
-	.arlo_tm_title_holder:before{top: -2px;}
-	.arlo_tm_services_wrap .list_wrap ul{margin: 0px;}
-	.arlo_tm_services_wrap .list_wrap ul li{width: 100%;padding-left: 0px;}
+	.title-holder h3{font-size: 45px;}
+	.title-holder:before{top: -2px;}
+	.videos-wrap .list_wrap ul{margin: 0px;}
+	.videos-wrap .list_wrap ul li{width: 100%;padding-left: 0px;}
 	.arlo_tm_counter_list li{width: 50%;}
 	.arlo_tm_counter_list li .inner{padding: 45px 15px 48px 15px;}
 	.arlo_tm_portfolio_list > li{width: 50%;}
@@ -2474,9 +2496,9 @@ img.svg{
 @media (max-width: 480px) {
 	.arlo_tm_hero_header_wrap .name_holder h3{font-size: 30px;}
 	.arlo_tm_hero_header_wrap .text_typing p{font-size: 18px;}
-	.arlo_tm_title_holder:before{display: none;}
-	.arlo_tm_title_holder h3{padding-left: 0px;}
-	.arlo_tm_title_holder span{padding-left: 0px;}
+	.title-holder:before{display: none;}
+	.title-holder h3{padding-left: 0px;}
+	.title-holder span{padding-left: 0px;}
 	.arlo_tm_counter_list li{width: 100%;}
 	.arlo_tm_counter_list li .inner{padding: 0px 0px 35px 0px;}
 	.arlo_tm_portfolio_list{margin: 0px;}
