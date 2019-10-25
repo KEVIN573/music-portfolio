@@ -915,34 +915,18 @@ img.svg{
 	margin-bottom: 93px;
 }
 
-.videos-wrap .videos-container{
-	display: grid;
-	grid-template-rows: 300px 300px; 
-	grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-	grid-gap: 2rem;
-	border: 2px solid red;
-	margin: 0px 30px 0px 30px;
+.videos-wrap .list_wrap{
 	width: 100%;
 	height: auto;
-}
-
-.videos-wrap .list_wrap ul{
-	/* margin: 0px 0px 0px -30px; */
-	list-style-type: none;
-}
-.videos-wrap .list_wrap ul li{
-	margin: 0px 0px 30px 0px;
+	clear: both;
 	float: left;
-	width: 33.3333%;
-	height: 300px;
-	padding-left: 30px;
-	border: 2px solid brown; 
-/*	width: 90vw;
-	margin: 0 auto;
+}
+.videos-wrap .list_wrap ul{
+	list-style-type: none;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-	grid-row-gap: 2rem;
-	grid-column-gap: 50px; */
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 300px;
+	grid-gap: 20px;
 }
 
 .videos-wrap .list_wrap ul li a{
@@ -955,21 +939,23 @@ img.svg{
 	font-size: 1.3rem;
 	color: #041230;
 }
-.videos-wrap .videos-container .inner{
+.videos-wrap .list_wrap ul li .inner{
+	width: 100%;
+	height: 100%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	
 }
 
-.videos-wrap .videos-container .inner .icon{
+.videos-wrap .list_wrap ul li .inner .icon{
 	background: #E3872D;
 	width: 50px;
 	height: 50px;
@@ -981,37 +967,37 @@ img.svg{
 }
 
 
-.videos-wrap .videos-container .inner1{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music7.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.videos-wrap .videos-container .inner2{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music2.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.videos-wrap .videos-container .inner3{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music3.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.videos-wrap .videos-container .inner4{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music4.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.videos-wrap .videos-container .inner5{
-	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music5.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.videos-wrap .videos-container .inner6{
+.videos-wrap .list_wrap ul li .inner1{
 	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music1.jpg) no-repeat center;
 	background-size: cover;
 }
 
-.videos-wrap .videos-container .inner:hover{
+.videos-wrap .list_wrap ul li .inner2{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.videos-wrap .list_wrap ul li .inner3{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.videos-wrap .list_wrap ul li .inner4{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music4.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.videos-wrap .list_wrap ul li .inner5{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music5.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.videos-wrap .list_wrap ul li .inner6{
+	background: linear-gradient(0deg, rgba(7,23,55,.7), rgba(7,23,55,.7)),url(../img/bradox/music6.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.videos-wrap .list_wrap ul li .inner:hover{
 	top: -5px;
 }
 
@@ -1082,12 +1068,13 @@ img.svg{
 }
 
 /*---------------------------------------------------*/
-/*	06) ARLO PORTFOLIO
+/*	 GALLERY
 /*---------------------------------------------------*/
 
 .title-holder .portfolio{
 	padding-bottom: 90px;
 }
+
 .arlo_tm_portfolio_wrapper_all{
 	width: 100%;
 	height: auto;
@@ -1097,7 +1084,10 @@ img.svg{
 	background-color: #fff;
 	
 }
-.arlo_tm_portfolio_wrapper_all .arlo_tm_button{text-align: center;}
+.arlo_tm_portfolio_wrapper_all .arlo_tm_button{
+	text-align: center;
+}
+
 .arlo_tm_portfolio_wrap{
 	width: 100%;
 	height: auto;
@@ -1117,7 +1107,10 @@ img.svg{
 	display:inline-block;
 	margin:0px 40px 0px 0px;
 }
-.arlo_tm_portfolio_filter li:last-child{margin-right: 0px;}
+.arlo_tm_portfolio_filter li:last-child{
+	margin-right: 0px;
+
+}
 .arlo_tm_portfolio_filter li a{
 	text-decoration:none;
 	font-size:14px;
@@ -1132,23 +1125,26 @@ img.svg{
 	-o-transition: all .1s ease;
 	transition: all .1s ease;
 }
-.arlo_tm_portfolio_filter li a.current{color: #BD0A0D;}
+.arlo_tm_portfolio_filter li a.current{
+	color: #BD0A0D;
+}
 
 /* PORTFOLIO LIST */
-
 .arlo_tm_portfolio_list{
 	list-style-type:none;
-	margin: 0px 0px 0px -30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 300px;
+	grid-gap: 20px;
+	border: 2px solid yellow;
+	
 }
-.arlo_tm_portfolio_list > li{
-	width:33.3333%;
-	float:left;
-	position:relative;
-	margin: 0px 0px 30px 0px;
-	padding-left: 30px;
 
+.arlo_tm_portfolio_list li .entry img{
+	width: 100%;
+	height: 100%;
 }
-.arlo_tm_portfolio_list li img{min-width: 100%;}
+
 .arlo_tm_portfolio_titles {
   white-space: nowrap;
   background: #ffffff;
@@ -1161,10 +1157,12 @@ img.svg{
   opacity: 0;
   visibility: hidden;
 }
+
 .arlo_tm_portfolio_titles.visible {
   opacity: 1;
   visibility: visible;
 }
+
 .arlo_tm_portfolio_titles .work__cat {
   position: absolute;
   background: #ffffff;
@@ -1176,7 +1174,12 @@ img.svg{
   font-weight: 400;
   padding: 5px 15px;
 }
-.entry{position: relative;}
+
+.entry{ 
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
 .arlo_tm_portfolio_image_main{
 	position: absolute;
 	top: 0px;
