@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-body {
+html, body {
 	overflow-x: hidden;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
@@ -617,6 +617,11 @@ span.nav_text {
 .ms_sidemenu_wrapper.open_menu .ms_logo {
 	display: none;
 }
+
+.ms_sidemenu_wrapper.open_menu .ms_logo_open a img{
+	margin-left: -20px;
+}
+
 .ms_sidemenu_wrapper.open_menu .ms_sidemenu_inner {
 	width: 200px;
 }
@@ -740,9 +745,9 @@ form.example input[type=text] {
 	margin-left: 20px;
 }
 
-.ms_top_left .kayate-logo{
-	font-size: 20px;
-	color: #b1d4e0;
+.ms_top_left a img{
+	height: 12vh;
+	width: auto;
 }
 
 .ms_top_left .kayate-logo span{
@@ -5240,7 +5245,7 @@ h2.widget-title:after {
 		font-size: 13px;
 	}
 	.ms_logo_inner {
-		min-height: 120px;
+		min-height: 1220px;
 	}
 	.ms_nav_wrapper {
 		top: 140px;
