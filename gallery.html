@@ -1,22 +1,8 @@
 <!DOCTYPE html>
-<!-- 
-Template Name: Miraculous - Online Music Store Html Template
-Version: 1.0.0
-Author: Kamleshyadav
-Website: 
-Purchase: 
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
 <!-- Begin Head -->
-
-
-<!-- Mirrored from kamleshyadav.com/html/miraculous/version1/upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2019 21:04:10 GMT -->
 <head>
-    <title>Miraculous - Online Music Store Html Template</title>
+    <title>Kayate Koll</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="Music">
@@ -36,9 +22,27 @@ Purchase:
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+	<!----Loader---->
+	<div class="ms_inner_loader">
+		<div class="ms_loader">
+			<div class="ms_bars">
+				<div class="bar"></div>				
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</div>
+	</div>
     <!----Main Wrapper Start---->
-    <div class="ms_main_wrapper ms_profile">
+    <div class="ms_main_wrapper">
         <!---Side Menu Start--->
+                <!---Side Menu Start--->
         <div class="ms_sidemenu_wrapper">
             <div class="ms_nav_close">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -54,7 +58,7 @@ Purchase:
                 </div>
                 <div class="ms_nav_wrapper">
                     <ul>
-                        <li><a href="index.html" title="Discover">
+                        <li><a href="index.html"  title="Discover">
 						<span class="nav_icon">
 							<span class="icon icon_discover"></span>
 						</span>
@@ -108,7 +112,7 @@ Purchase:
 						</span>
 						</a>
                         </li>
-                        <li><a href="stations.html" title="Stations">
+                        <li><a href="stations.html" title="Stations" class="active">
 						<span class="nav_icon">
 							<span class="icon icon_station"></span>
 						</span>
@@ -119,7 +123,7 @@ Purchase:
                         </li>
                     </ul>
                     <ul class="nav_downloads">
-                        <li><a href="download.html" class="active" title="Downloads">
+                        <li><a href="download.html" title="Downloads">
 						<span class="nav_icon">
 							<span class="icon icon_download"></span>
 						</span>
@@ -157,7 +161,7 @@ Purchase:
                         </li>
                     </ul>
                     <ul class="nav_playlist">
-                        <li><a href="feature_playlist.html" title="featured Playlist">
+                        <li><a href="feature_playlist.html" title="Featured Playlist">
 						<span class="nav_icon">
 							<span class="icon icon_fe_playlist"></span>
 						</span>
@@ -180,7 +184,7 @@ Purchase:
             </div>
         </div>
         <!---Main Content Start--->
-        <div class="padder_top80">
+        <div class="ms_content_wrapper padder_top90">
             <!---Header--->
             <div class="ms_header">
                 <div class="ms_top_left">
@@ -198,69 +202,407 @@ Purchase:
                     <div class="ms_top_lang">
                         <span data-toggle="modal" data-target="#lang_modal">languages <img src="images/svg/lang.svg" alt=""></span>
                     </div>
-                    <div class="ms_top_btn">
-                        <a href="upload.html" class="ms_btn">upload</a>
-                        <a href="javascript:;" class="ms_admin_name">Hello Bella <span class="ms_pro_name">ns</span>													
-						</a>
-						<ul class="pro_dropdown_menu">
-							<li><a href="profile.html">Profile</a></li>
-							<li><a href="manage_acc.html" target="_blank">Pricing Plan</a></li>
-							<li><a href="blog.html" target="_blank">Blog</a></li>
-							<li><a href="#">Setting</a></li>
-							<li><a href="#">Logout</a></li>
-						</ul>
+					<div class="ms_top_btn">
+						<a href="javascript:;" class="ms_btn reg_btn" data-toggle="modal" data-target="#myModal"><span>register</span></a>
+						<a href="javascript:;" class="ms_btn login_btn" data-toggle="modal" data-target="#myModal1"><span>login</span></a>
+					</div>
+                </div>
+            </div>
+            <!----Top Artist Section---->
+            <div class="ms_top_artist">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ms_heading">
+                                <h1>Live Stations</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 101</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 101</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 102</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 102</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 103</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 103</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 104</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 104</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 105</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 105</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 106</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 106</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 107</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 107</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 108</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 108</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/station/station1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="ms_frequency">fm 109</span>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Frequency 109</a></h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!----Upload and Share Wrapper Start---->
-            <div class="ms_upload_wrapper marger_top60">
-                <div class="ms_upload_box">
-                    <h2>Upload & Share Your Music With The World</h2>
-                    <img src="images/svg/upload.svg" alt="">
-                    <div class="ms_upload_btn">
-                        <a href="#" class="ms_btn">save files</a>
-                    </div>
-                    <span> or </span>
-                    <p>Drag And Drop Music Files</p>
-                </div>
-                <div class=" marger_top60">
-                    <div class="ms_upload_box">
-                        <div class="ms_heading">
-                            <h1>Track Information</h1>
+            <!----Live Radio Section Start---->
+            <div class="ms_top_artist">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ms_heading">
+                                <h1>Live Radio</h1>
+                            </div>
                         </div>
-                        <div class="ms_pro_form">
-                            <div class="form-group">
-                                <label>Track Name *</label>
-                                <input type="text" placeholder="Dream Your Moments" class="form-control">
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img1.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Top Trendings</a></h3>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Artist’s Name *</label>
-                                <input type="text" placeholder="Ava Cornish, Brian Hill" class="form-control">
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img2.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">New Romantic Charts</a></h3>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Select Album</label>
-                                <select class="form-control">
-								<option>Cloud Nine</option>
-								<option value="1">Cyber Sonnet </option>
-								<option value="2">Cloud Nine</option>
-								<option value="3">Cyber Sonnet</option>
-								<option value="4">Cloud Nine</option>
-							</select>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img3.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Dance Beats - Hip Hops</a></h3>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Select Privacy</label>
-                                <select class="form-control">
-								<option>Public</option>
-								<option value="1">Private</option>
-								<option value="2">Public</option>
-								<option value="3">Private</option>
-								<option value="4">Public</option>
-							</select>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img4.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Workout Time</a></h3>
+                                </div>
                             </div>
-                            <div class="pro-form-btn text-center marger_top15">
-                                <div class="ms_upload_btn">
-                                    <a href="#" class="ms_btn">Upload Now</a>
-                                    <a href="#" class="ms_btn">cancle</a>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img5.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Best Classics Of All Time</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img6.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Heart Broken - Soul Music</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img7.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">International Hits</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img8.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Nostalgia</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img9.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Retros</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/featured/song4.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Summer Season</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img10.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Rock It</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box marger_bottom30">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img11.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Top 20s Hits</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img12.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">Happy Mood</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="images/radio/img13.jpg" alt="" class="img-fluid">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_play_icon">
+                                            <img src="images/svg/play.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="#">90s Best Tracks</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +620,7 @@ Purchase:
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer_box">
-                            <h1 class="footer_title">music template</h1>
+                            <h1 class="footer_title">miraculous music stations</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
                         </div>
                     </div>
@@ -362,7 +704,7 @@ Purchase:
             </div>
         </div>
         <!----Audio Player Section---->
-<div class="ms_player_wrapper">
+                <div class="ms_player_wrapper">
 			<div class="ms_player_close">
 				<i class="fa fa-angle-up" aria-hidden="true"></i>
 			</div>
@@ -453,8 +795,8 @@ Purchase:
                                 </div>
                                 <div class="jp-toggles flex-item">
                                     <button class="jp-shuffle" tabindex="0" title="Shuffle">
-									<i class="ms_play_control"></i></button>
-									<button class="jp-repeat" tabindex="0" title="Repeat"><i class="ms_play_control"></i></button>
+				<i class="ms_play_control"></i></button>
+				<button class="jp-repeat" tabindex="0" title="Repeat"><i class="ms_play_control"></i></button>
                                 </div>
                                 <div class="jp_quality_optn custom_select">
                                     <select>
@@ -472,6 +814,7 @@ Purchase:
             </div>
             <!--main div-->
         </div>
+        <!--main div-->
     </div>
     <!----Register Modal Start---->
     <!-- Modal -->
@@ -552,7 +895,7 @@ Purchase:
 							<span class="checkmark"></span>
 						</label>
                             </div>
-                            <a href="#" class="ms_btn">login now</a>
+                            <a href="profile.html" class="ms_btn" target="_blank">login now</a>
                             <div class="popup_forgot">
                                 <a href="#">Forgot Password ?</a>
                             </div>
@@ -708,7 +1051,7 @@ Purchase:
                 </div>
             </div>
         </div>
-	</div>
+	</div>	
     <!--Main js file Style-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -722,5 +1065,5 @@ Purchase:
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
-<!-- Mirrored from kamleshyadav.com/html/miraculous/version1/upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2019 21:04:11 GMT -->
+<!-- Mirrored from kamleshyadav.com/html/miraculous/version1/stations.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2019 21:03:39 GMT -->
 </html>
