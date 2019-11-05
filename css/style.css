@@ -12,21 +12,20 @@ html, body {
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	line-height: 24px;
-	color: #777777;
+	color: #b1d4e0;
 	background-color: #14182a;
 
 }
-/*====Normal Css Start====*/
+/*====globals Css Start====*/
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	margin-bottom: 0;
 	font-family: inherit;
 	font-weight: 600;
 	line-height: 1.2;
-	color: #3bc8e7;
+	color: #3498db;
 }
 a {
-	color: #3bc8e7;
+	color: #3498db;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -40,7 +39,7 @@ button:focus {
 	outline: none;
 }
 .ms_color {
-	color: #3bc8e7 !important
+	color: #3498db!important;
 }
 .form-control {
 	height: 40px;
@@ -48,13 +47,13 @@ button:focus {
 	font-size: 16px;
 	line-height: 40px;
 	color: #777777;
-	background-color: #fff;
+	background-color: #b1d4e0;
 	border-radius: 5px;
 	border: 1px solid transparent;
 }
 .form-control:focus {
 	box-shadow: 0px 0px 10px rgba(59, 200, 231, 0.55);
-	border: 1px solid #3bc8e7;
+	/* border: 1px solid #3bc8e7; */
 }
 select.form-control:not([size]):not([multiple]) {
 	height: 40px;
@@ -651,8 +650,7 @@ span.nav_text {
 /*==== Header Css Start ====*/
 .ms_content_wrapper {
 	position: relative;
-	margin-left: 80px;
-	margin-right: 0px;
+	/* margin-left: 80px; */
 }
 .ms_header {
 	display: flex;
@@ -662,22 +660,21 @@ span.nav_text {
 	width: 100%;
 	position: fixed;
 	background-color: #1b2039;
-	right: 0;
 	left: 80px;
 	top: 0;
-	z-index: 1000;
-	backface-visibility: hidden;
+	z-index: 100;
+	/* backface-visibility: hidden; */
 
 }
 
 /* Style the search field */
-form.example {
+form.search-area {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 60px;
 }
-form.example input[type=text] {
+form.search-area input[type=text] {
 	padding: 8px;
 	height: 30px;
 	font-size: 13px;
@@ -688,11 +685,11 @@ form.example input[type=text] {
   }
   
   /* Style the submit button */
-  form.example button {
+  form.search-area button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 20px;
+	width: 30px;
 	height: 30px;
 	background: #3498db;
 	color: #b1d4e0;
@@ -703,15 +700,9 @@ form.example input[type=text] {
 	border-radius: 0 5px 5px 0;
   }
   
-  form.example button:hover {
+  form.search-area button:hover {
 	background: #0b7dda;
   }
-  
-  /* Clear floats */
-  form.example::after {
-  }
-
-
 .ms_top_search {
 	width: auto;
 	position: relative;
@@ -741,10 +732,6 @@ form.example input[type=text] {
 	border-radius: 5px;
 }
 
-.ms_top_left{
-	margin-left: 20px;
-}
-
 .ms_top_left a img{
 	height: 12vh;
 	width: auto;
@@ -764,7 +751,7 @@ form.example input[type=text] {
 	color: #fff;
 }
 .ms_top_right {
-	/* line-height: 40px; */
+	line-height: 40px;
 }
 .ms_top_right .ms_top_lang {
 	color: #ffffff;
@@ -791,16 +778,15 @@ form.example input[type=text] {
 	top: 6px;
 }
 .ms_btn {
-	background-color: #3bc8e7;
-	color: #fff;
-	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3498db;
+	color: #b1d4e0;
 	display: inline-block;
 	text-transform: capitalize;
 	width: 100px;
-	text-align: center;
-	line-height: 32px;
-	border-radius: 20px;
-	margin-left: 15px;
+	border-radius: 2px;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -873,10 +859,12 @@ ul.ms_lang_box:after {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(0deg, rgba(15, 20, 35, 0.8), rgba(15, 20, 35, 0.8)),
+	background: linear-gradient( rgba(27, 32, 57, 0.6), rgba(27, 32, 57, 0.5)),
 	url(../images/bradox/gallary2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	top: 12vh;
+	left: 80px;
 }
 
 .ms_banner_text {
@@ -885,35 +873,47 @@ ul.ms_lang_box:after {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100vw;
-	height: 100vh;
-}
-.ms_banner_text .ms_banner_btn .ms_btn {
-	height: 40px;
 	width: 100%;
-	margin-right: 25px;
-	line-height: 45px;
-	margin-left: 0;
-	max-width: 150px;
-	font-weight: 600;
+	height: 100vh;
+	left: 0;
 }
+
+.ms_banner_text .ms_banner_btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+
+.ms_banner_text .ms_banner_btn .ms_btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 2px;
+	background: #e67c33;
+	padding: 10px;
+
+}
+.ms_banner_text .ms_banner_btn .ms_btn:first-child{
+	margin-right: 20px;
+}
+
 .ms_banner_text h1 {
 	font-size: 45px;
 	font-weight: bold;
-	color: #fff;
+	color: #b1d4e0;
+	margin-bottom: 10px;
 }
 .ms_banner_text p {
-	/* margin: 15px 0px 40px;
-	line-height: 30px; */
+	color: #b1d4e0;
+	text-transform: capitalize;
 }
 /*====Recent Music Slider====*/
 .ms_rcnt_slider {
 	position: relative;
-	margin: 60px;
+	margin: 160px 60px 30px 120px;
+	padding-bottom: 0;
 }
 .ms_heading {
 	width: 100%;
@@ -934,11 +934,11 @@ ul.ms_lang_box:after {
 	right: 0px;
 }
 .veiw_all a {
-	color: #fff;
+	color: #b1d4e0;
 	text-transform: capitalize;
 }
 .veiw_all a:hover {
-	color: #3bc8e7;
+	color: #3498db;
 }
 .ms_heading h1:after {
 	width: 100px;
@@ -948,10 +948,10 @@ ul.ms_lang_box:after {
 	bottom: 0;
 	left: -15px;
 	z-index: 0;
-	background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
-	background: -moz-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
-	background: -ms-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
-	background: -o-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
+	background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #3498db, rgba(255, 42, 112, 0) 60%);
+	background: -moz-radial-gradient(50% 50%, ellipse closest-side, #3498db, rgba(255, 42, 112, 0) 60%);
+	background: -ms-radial-gradient(50% 50%, ellipse closest-side, #3498db, rgba(255, 42, 112, 0) 60%);
+	background: -o-radial-gradient(50% 50%, ellipse closest-side, #3498db, rgba(255, 42, 112, 0) 60%);
 }
 .ms_rcnt_box {
 	text-align: center;
@@ -976,17 +976,17 @@ ul.ms_lang_box:after {
 }
 .ms_rcnt_box_text h3 a,
 .w_top_song .w_tp_song_name h3 a {
-	color: #ffffff;
+	color: #b1d4e0;
 }
 .ms_rcnt_box_text p,
 .w_top_song .w_tp_song_name p {
-	color: #dedede;
+	color: #b1d4e0;
 	font-size: 14px;
 	margin: 0px;
 }
 .ms_rcnt_box_text h3 a:hover,
 .w_top_song .w_tp_song_name h3 a:hover {
-	color: #3bc8e7;
+	color: #3498db;
 }
 .ms_rcnt_slider .swiper-container {
 	margin: 0px 0px;
@@ -1041,9 +1041,9 @@ ul.ms_lang_box:after {
 .ms_box_overlay {
 	position: absolute;
 	border-radius: 10px;
-	background-image: -moz-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(59, 200, 231) 0%, rgba(32, 167, 196, 0) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(59, 200, 231) 0%, rgba(32, 167, 196, 0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(59, 200, 231) 0%, rgba(32, 167, 196, 0) 100%);
+	background-image: -moz-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(27,32,57) 0%, rgba(32, 167, 196, 0) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(27,32,57) 0%, rgba(32, 167, 196, 0) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(27,32,57) 0%, rgba(32, 167, 196, 0) 100%);
 	height: 100%;
 	width: 100%;
 	left: 0;
@@ -1200,7 +1200,7 @@ ul.more_option li a {
 }
 ul.more_option li a:hover,
 .ms_rcnt_box:hover .ms_rcnt_box_text h3 a {
-	color: #3bc8e7;
+	color: #e67c33;
 }
 ul.more_option li a .opt_icon {
 	padding-right: 10px;
@@ -1250,8 +1250,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 /*====Weekly Top 15 Music =====*/
 .ms_weekly_wrapper {
-	padding-top: 50px;
-	margin: 60px;
+	margin: 0px 60px 30px 120px;
 }
 .ms_weekly_wrapper .ms_heading {
 	margin-bottom: 10px;
@@ -1374,11 +1373,11 @@ ul.more_option li a:hover .opt_icon .icon_share {
 .ms_weekly_box.ms_active_play .w_tp_song_name h3 a,
 .ms_release_box:hover .w_tp_song_name h3 a,
 .ms_release_box.ms_active_play .w_tp_song_name h3 a {
-	color: #3bc8e7;
+	color: #e67c33;
 }
 .ms_weekly_box:hover .weekly_left span.w_top_no,
 .ms_weekly_box.ms_active_play .weekly_left span.w_top_no {
-	color: #3bc8e7;
+	color: #3498db;
 }
 .ms_bars {
 	height: 20px;
@@ -1452,7 +1451,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 /*====Featured Artists Css Start====*/
 .ms_featured_slider, .ms_releases_wrapper {
 	position: relative;
-	margin: 60px;
+	margin: 60px 60px 160px 120px;
 }
 /*====Advertisment Css Start====*/
 .ms_advr_wrapper {
@@ -1495,7 +1494,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	content: "";
 	width: 10px;
 	height: 10px;
-	background-color: #3bc8e7;
+	background-color: #3498db;
 	top: -26px;
 	left: 38px;
 	border-radius: 100%;
@@ -1525,10 +1524,10 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 .swiper-slide.swiper-slide-active .slider_dot,
 .ms_release_box:hover .slider_dot {
-	box-shadow: 0px 0px 10px rgb(255, 255, 255);
+	box-shadow: 0px 0px 10px #3498db;
 }
 .ms_releases_wrapper .swiper-slide.swiper-slide-active .w_top_song .w_tp_song_name h3 a {
-	color: #3bc8e7;
+	color: #3498db;
 }
 .ms_releases_wrapper .swiper-slide.swiper-slide-active .w_top_song .ms_song_overlay {
 	opacity: 1;
@@ -1551,7 +1550,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 /*====Featured Album Slider Css Start====*/
 .ms_fea_album_slider {
 	position: relative;
-	margin: 60px;
+	margin: 160px 60px 160px 120px;
 }
 /*====Top Genres Css Start====*/
 .ms_genres_wrapper {
@@ -1629,7 +1628,7 @@ span.ovrly_text2 {
 /*====Live Radio Css Start==== */
 .ms_radio_wrapper {
 	position: relative;
-	margin: 60px;
+	margin: 60px 60px 60px 120px;
 }
 .ms_radio_slider {
 	position: relative;
@@ -3332,11 +3331,11 @@ i.fa_icon.form-lock {
 	width: 140%;
 }
 .modal-open .ms_main_wrapper {
-	-webkit-filter: blur(2px);
+	/* -webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
 	-o-filter: blur(2px);
 	-ms-filter: blur(2px);
-	filter: blur(2px);
+	filter: blur(2px); */
 }
 .ms_register_form .remember_checkbox {
 	float: left;
@@ -3549,7 +3548,7 @@ button.save_btn:hover {
 }
 .ms_main_wrapper.ms_profile .ms_top_lang {
 	padding-right: 34px;
-}
+} 
 .ms_admin_name span.ms_pro_name {
 	width: 50px;
 	height: 50px;
@@ -4445,6 +4444,14 @@ h2.widget-title:after {
 	.ms_profile .ms_top_btn {
 		width: 67.3%;
 	}
+	
+form.search-area {
+	margin-right: 100px;
+}
+form.search-area input[type=text] {
+	padding: 10px;
+	width: 250px;
+  }
 }
 @media(max-width:1800px) {
 	.jp-volume-controls.flex-item {
@@ -4488,6 +4495,14 @@ h2.widget-title:after {
 		white-space: nowrap;
 		width: 35%;
 	}
+	 	
+	form.search-area {
+	margin-right: 100px;
+		}
+	form.search-area input[type=text] {
+	padding: 10px;
+	width: 250px;
+ 	 }
 }
 @media(min-width:1400px) and (max-width:1800px) {
 	ul.more_option {
@@ -4499,6 +4514,7 @@ h2.widget-title:after {
 		font-size: 11px;
 		line-height: 24px;
 	}
+
 }
 @media(max-width:1700px) {
 	.ms_top_search {
@@ -4645,7 +4661,7 @@ h2.widget-title:after {
 		max-width: 470px;
 	}
 	.ms_banner_text {
-		width: 100vw;
+		width: 100%;
 	}
 	.ms_banner_text h1 {
 		font-size: 29px;
@@ -4739,10 +4755,7 @@ h2.widget-title:after {
 		margin: 20px 160px;
 		
 	}
-	.ms_content_wrapper {
-		margin-left: 80px;
-		margin-right: 0px;
-	}
+
 	.ms_weekly_wrapper .col-lg-4.col-md-12 {
 		padding-right: 20px;
 		flex: 0 0 100%;
@@ -4768,10 +4781,6 @@ h2.widget-title:after {
 @media(max-width:1200px) {
 	.ms_main_wrapper.ms_profile .ms_top_trend {
 		width: 25%;
-	}
-	.ms_content_wrapper {
-		margin-right: 0px;
-		margin-left: 0;
 	}
 	.ms_rcnt_box_text h3,
 	.w_top_song .w_tp_song_name h3 {
@@ -4800,15 +4809,13 @@ h2.widget-title:after {
 		font-size: 27px;
 	}
 	.ms_banner_text {
-		width: calc(100% - 50%);
-		padding-top: 85px;
+		width: 100%;
 	}
-	/* .ms-banner {
-		padding: 0px;
-		padding-bottom: 30px;
-	} */
+	.ms-banner {
+		left: 0px;
+	}
 	.ms_banner_text .ms_banner_btn .ms_btn {
-		max-width: 125px;
+		/* max-width: 125px; */
 	}
 	.jp-type-playlist {
 		padding-left: 270px;
@@ -4892,6 +4899,7 @@ h2.widget-title:after {
 		font-size: 22px;
 	}
 	.ms_weekly_wrapper {
+		margin: 0px 15px 60px 15px;
 		padding-right: 15px;
 	}
 	.ms_weekly_box {
@@ -4902,7 +4910,7 @@ h2.widget-title:after {
 		display: none;
 	}
 	.ms_content_wrapper.padder_top80 {
-		padding-top: 70px !important;
+		/* padding-top: 70px !important; */
 	}
 	.ms_weekly_wrapper.ms_free_music .weekly_right {
 		right: 0;
@@ -4940,11 +4948,11 @@ h2.widget-title:after {
 		left: 0px;
 	}
 	.ms_radio_wrapper {
-		margin: 30px 0px 0px 0px;
+		margin: 60px 15px 60px 15px;
 	}
 	.ms_featured_slider,
 	.ms_releases_wrapper {
-		margin: 60px;
+		margin: 60px 15px 60px 15px;
 	}
 	.ms_fea_album_slider {
 		margin: 52px 0px 0px 0px;
@@ -4974,6 +4982,10 @@ h2.widget-title:after {
 		-ms-flex: 33.33%;
 		max-width: 33.33%;
 	}
+	.ms-banner {
+		left: 90px;
+	}
+	
 }
 @media(max-width:1024px) {
 	.ms_main_wrapper.ms_profile .ms_top_trend {
@@ -5131,9 +5143,6 @@ h2.widget-title:after {
 	}
 	.ms_banner_text {
 		width: 100%;
-		padding-top: 20px;
-		padding-left: 30px;
-		text-align: center;
 	}
 	.ms_banner_img {
 		max-width: 100%;
@@ -5217,6 +5226,7 @@ h2.widget-title:after {
 	.ms_blog_wrapper .ms_blog_section {
 		margin-bottom: 30px;
 	}
+
 	.ms_genres_box:hover .ovrly_text_div {
 		bottom: 20px;
 		display: block;
@@ -5418,8 +5428,17 @@ h2.widget-title:after {
 		-ms-transform: none;
 		-o-transform: none;
 	}
+	
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+
 	.ms_content_wrapper.padder_top80 {
-		padding-top: 50px !important;
+		/* padding-top: 50px !important; */
 	}
 	.ms_nav_close i {
 		color: #b1d4e0;
@@ -5492,14 +5511,6 @@ h2.widget-title:after {
 	.ms_header {
 		left: 0px;
 	}
-	.ms_content_wrapper {
-		margin-left: 0;
-		padding: 0px 20px;
-		margin-right: 0px !important;
-	}
-	.ms_banner_text {
-		padding-left: 0px;
-	}
 	.ms_weekly_wrapper {
 		padding-left: 15px;
 		padding-right: 25px;
@@ -5529,7 +5540,7 @@ h2.widget-title:after {
 	}
 	.ms_releases_wrapper {
 		padding: 0px 15px;
-		margin-right: 0;
+		margin-right: 15px;
 	}
 	.ms_releases_wrapper .slider_nav_prev,
 	.ms_releases_wrapper .slider_nav_next {
@@ -5537,7 +5548,7 @@ h2.widget-title:after {
 	}
 	.ms_genres_wrapper,
 	.ms_radio_wrapper {
-		margin: 30px 15px 0px 15px;
+		margin: 60px 15px 60px 15px;
 	}
 	.modal-dialog {
 		max-width: 94%;
@@ -5565,6 +5576,13 @@ h2.widget-title:after {
 	.jp-volume-controls.flex-item {
 		margin-left: 15px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 }
 @media(max-width:815px) {
 	.ms_album_single_wrapper .album_inner_list {
@@ -5574,13 +5592,34 @@ h2.widget-title:after {
 		width: 120%;
 		padding-bottom: 10px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 }
 @media(min-width:768px) and (max-width:991px) {
 	.ms_nav_wrapper {
 		bottom: 127px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 }
 @media(max-width:768px) {
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 	.jp-toggles.flex-item button {
 		margin: 5px 6px 0px 6px;
 	}
@@ -5603,6 +5642,14 @@ h2.widget-title:after {
 @media(max-width:767px) {
 	.blog_single_content .ms_blog_title {
 		font-size: 19px;
+	}
+
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
 	}
 	.ms_sidebar {
 		margin-top: 30px;
@@ -5656,8 +5703,8 @@ h2.widget-title:after {
 		padding-top: 20px;
 	}
 	.ms_btn {
-		width: 85px;
-		margin-left: 5px;
+		/* width: 85px;
+		margin-left: 5px; */
 	}
 	.ms_lang_popup .modal-dialog {
 		max-width: 100%;
@@ -5671,12 +5718,7 @@ h2.widget-title:after {
 		font-size: 23px;
 	}
 	.ms_banner_text .ms_banner_btn .ms_btn {
-		margin-right: 13px;
-		line-height: 40px;
-		margin-left: 0;
-		max-width: 110px;
-		font-size: 13px;
-		height: 35px;
+		/* font-size: 13px; */
 	}
 	.jp_quality_optn.custom_select {
 		display: none;
@@ -5691,7 +5733,7 @@ h2.widget-title:after {
 		top: 0;
 	}
 	.ms_releases_wrapper {
-		margin-right: 0px;
+		margin-right: 15px;
 	}
 	.ms_play_song {
 		padding: 14px 0px 10px 15px;
@@ -5709,9 +5751,7 @@ h2.widget-title:after {
 	.player_left.open_list .play_song_options {
 		display: none;
 	}
-	.ms_content_wrapper {
-		margin-left: 0px;
-	}
+	
 	.ms_releases_wrapper .slider_nav_prev {
 		right: 5%!important;
 		left: auto;
@@ -5838,6 +5878,13 @@ h2.widget-title:after {
 	.ms_lang_popup .modal-content p {
 		margin-bottom: 10px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 	.ms_lang_popup .modal-content ul.lang_list li {
 		padding: 5px 20px;
 	}
@@ -5905,6 +5952,13 @@ h2.widget-title:after {
 		right: 5px;
 		top: 5px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 	.ms_lang_popup .modal-content {
 		padding: 15px 0px;
 		overflow-y: scroll;
@@ -5928,10 +5982,25 @@ h2.widget-title:after {
 		width: auto;
 		margin-top: 5px;
 	}
+
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 }
 @media(max-width:667px) {
 	.swiper-button-prev4.slider_nav_prev {
 		top: 63%;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
 	}
 	.swiper-button-next4.slider_nav_next {
 		top: 63%;
@@ -6014,6 +6083,13 @@ h2.widget-title:after {
 	.ms_register_popup .modal-content {
 		padding: 30px 30px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 	.ms_register_img {
 		display: none;
 	}
@@ -6085,6 +6161,13 @@ h2.widget-title:after {
 		/* width: 100%;
 		padding-top: 10px;
 		padding-right: 0px; */
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
 	}
 	.album_single_data ul.more_option {
 		max-width: 150px;
@@ -6252,6 +6335,14 @@ h2.widget-title:after {
 		padding-right: 2px;
 		display: inline-block;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
+
 	.ms_weekly_wrapper.ms_free_music {
 		padding-right: 0px;
 	}
@@ -6290,9 +6381,9 @@ h2.widget-title:after {
 		line-height: 26px;
 	}
 	.ms_banner_text .ms_banner_btn .ms_btn {
-		margin-right: 0px;
+		/* margin-right: 0px;
 		max-width: 100px;
-		font-size: 12px;
+		font-size: 12px; */
 	}
 	.weekly_right .ms_more_icon {
 		display: block;
@@ -6319,16 +6410,13 @@ h2.widget-title:after {
 		width: 100%;
 	}
 	.ms_banner_btn {
-		text-align: center;
+		/* text-align: center; */
 	}
 	.ms_banner_text h1 {
 		text-align: center;
 	}
-	.ms_banner_btn {
-		text-align: center;
-	}
 	.ms_banner_text .ms_banner_btn .ms_btn {
-		margin-bottom: 10px;
+		/* margin-bottom: 10px; */
 	}
 	.ms_main_wrapper.ms_profile .ms_header {
 		/* padding: 20px 20px 10px; */
@@ -6354,6 +6442,13 @@ h2.widget-title:after {
 	.ms_nav_close {
 		right: 2px;
 	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
+	}
 	.ms_copyright {
 		overflow-x: hidden;
 	}
@@ -6367,8 +6462,8 @@ h2.widget-title:after {
 		font-size: 12px !important;
 	}
 	.ms_banner_text .ms_banner_btn .ms_btn {
-		margin-right: 0px;
-		margin-bottom: 15px;
+		/* margin-right: 0px;
+		margin-bottom: 15px; */
 	}
 	.ms_rcnt_slider,
 	.ms_featured_slider,
@@ -6431,11 +6526,11 @@ h2.widget-title:after {
 		width: 100%;
 	}
 	.ms_releases_wrapper {
-		padding-right: 0px;
+		padding-right: 15px;
 	}
 	.ms_genres_wrapper,
 	.ms_radio_wrapper {
-		margin: 55px 10px 0px 10px;
+		margin: 60px 15px 60px 15px;
 	}
 	.ms_footer_logo {
 		padding-left: 0px;
@@ -6553,6 +6648,13 @@ h2.widget-title:after {
 		font-size: 12px;
 		margin-bottom: 10px;
 		margin-right: 0px;
+	}
+	form.search-area {
+		margin-right: 60px;
+	}
+	form.search-area input[type=text] {
+		padding: 8px;
+		width: 100px;
 	}
 	.ms_album_single_wrapper .ms_more_icon {
 		top: -35px;
