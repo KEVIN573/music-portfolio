@@ -34,8 +34,7 @@ a {
 a:hover {
 	text-decoration: none;
 }
-a:focus,
-button:focus {
+a:focus, button:focus {
 	outline: none;
 }
 .ms_color {
@@ -912,7 +911,7 @@ ul.ms_lang_box:after {
 /*====Recent Music Slider====*/
 .ms_rcnt_slider {
 	position: relative;
-	margin: 160px 60px 30px 120px;
+	margin: 60px 60px 30px 120px;
 	padding-bottom: 0;
 }
 .ms_heading {
@@ -1250,7 +1249,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 /*====Weekly Top 15 Music =====*/
 .ms_weekly_wrapper {
-	margin: 0px 60px 30px 120px;
+	margin: 120px 60px 30px 120px;
 }
 .ms_weekly_wrapper .ms_heading {
 	margin-bottom: 10px;
@@ -1451,7 +1450,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 /*====Featured Artists Css Start====*/
 .ms_featured_slider, .ms_releases_wrapper {
 	position: relative;
-	margin: 60px 60px 160px 120px;
+	margin: 120px 60px 160px 120px;
 }
 /*====Advertisment Css Start====*/
 .ms_advr_wrapper {
@@ -1550,7 +1549,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 /*====Featured Album Slider Css Start====*/
 .ms_fea_album_slider {
 	position: relative;
-	margin: 160px 60px 160px 120px;
+	margin: 160px 60px 0px 120px;
 }
 /*====Top Genres Css Start====*/
 .ms_genres_wrapper {
@@ -3022,7 +3021,7 @@ ul.play_active_song .play_hover {
 }
 /*====Artists Css Start====*/
 .ms_top_artist {
-	margin-top: 50px;
+	margin: 160px 120px 60px 160px;
 }
 .ms_top_artist .container-fluid {
 	padding-left: 0px;
@@ -4129,6 +4128,7 @@ ul.pro_dropdown_menu li a:hover {
 .ms_blog_wrapper {
 	padding-top: 60px;
 	position: relative;
+	margin: 30px 120px 60px 160px;
 }
 .ms_blog_wrapper .ms_blog_section {
 	position: relative;
@@ -4194,6 +4194,7 @@ ul.pro_dropdown_menu li a:hover {
 /*==== Blog Single Page Css Start ====*/
 .ms_blog_single_wrapper {
 	padding-top: 60px;
+	margin: 60px 120px 60px 160px;
 }
 .blog_single_img img {
 	width: 100%;
@@ -4982,7 +4983,7 @@ form.search-area input[type=text] {
 		margin: 60px 15px 60px 15px;
 	}
 	.ms_fea_album_slider {
-		margin: 52px 0px 0px 0px;
+		margin: 160px 60px 0px 120px;
 	}
 	.ms_footer_wrapper {
 		padding-left: 26px;
@@ -5069,7 +5070,7 @@ form.search-area input[type=text] {
 		margin-left: 20px;
 	}
 	.ms_blog_wrapper {
-		margin-right: 25px;
+		margin: 20px 15px;
 	}
 	.album_inner_list {
 		width: 778px;
@@ -5301,10 +5302,10 @@ form.search-area input[type=text] {
 		padding-right: 0;
 	}
 	.ms_blog_single_wrapper {
-		margin-right: 0px;
+		margin: 30px 15px;
 	}
 	.ms_blog_wrapper {
-		margin-right: 0;
+		margin: 20px 15px;
 	}
 	.ms_input_group1 {
 		width: 54%;
@@ -6158,7 +6159,7 @@ form.search-area input[type=text] {
 		left: 20%;
 	}
 	.ms_blog_wrapper {
-		margin-right: 0;
+		margin: 20px 15px;
 	}
 	.ms_main_wrapper.ms_profile .ms_header {
 		/* padding: 10px 30px 5px; */
@@ -6298,7 +6299,7 @@ form.search-area input[type=text] {
 		margin: 10px 0px;
 	}
 	.ms_blog_single_wrapper {
-		margin-right: 0px;
+		margin: 30px 15px;
 	}
 	.ms_comment_section .comment_info .comment_reply {
 		width: 100%;
@@ -6502,6 +6503,8 @@ form.search-area input[type=text] {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+
+
 	.ms_sidemenu_wrapper.open_menu a {
 		padding: 9px 10px;
 	}
