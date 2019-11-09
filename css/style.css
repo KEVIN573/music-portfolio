@@ -911,7 +911,7 @@ ul.ms_lang_box:after {
 /*====Recent Music Slider====*/
 .ms_rcnt_slider {
 	position: relative;
-	margin: 60px 60px 30px 120px;
+	margin: 160px 120px 100px 160px;
 	padding-bottom: 0;
 }
 .ms_heading {
@@ -1249,7 +1249,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 /*====Weekly Top 15 Music =====*/
 .ms_weekly_wrapper {
-	margin: 120px 60px 30px 120px;
+	margin: 120px 120px 30px 160px;
 }
 .ms_weekly_wrapper .ms_heading {
 	margin-bottom: 10px;
@@ -1450,7 +1450,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 /*====Featured Artists Css Start====*/
 .ms_featured_slider, .ms_releases_wrapper {
 	position: relative;
-	margin: 120px 60px 160px 120px;
+	margin: 160px 120px 100px 160px;
 }
 /*====Advertisment Css Start====*/
 .ms_advr_wrapper {
@@ -1468,8 +1468,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	position: relative;
 }
 .ms_releases_wrapper {
-	margin-top: 50px;
-	margin-bottom: 9px;
+	margin: 160px 120px 60px 160px;
 	display: inline-block;
 	width: 100%;
 }
@@ -1549,7 +1548,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 /*====Featured Album Slider Css Start====*/
 .ms_fea_album_slider {
 	position: relative;
-	margin: 160px 60px 0px 120px;
+	margin: 100px 120px 100px 160px;
 }
 /*====Top Genres Css Start====*/
 .ms_genres_wrapper {
@@ -1627,7 +1626,7 @@ span.ovrly_text2 {
 /*====Live Radio Css Start==== */
 .ms_radio_wrapper {
 	position: relative;
-	margin: 60px 60px 60px 120px;
+	margin: 100px 120px 100px 160px;
 }
 .ms_radio_slider {
 	position: relative;
@@ -4927,7 +4926,7 @@ form.search-area input[type=text] {
 		font-size: 22px;
 	}
 	.ms_weekly_wrapper {
-		margin: 0px 15px 60px 15px;
+		margin: 120px 15px;
 		padding-right: 15px;
 	}
 	.ms_weekly_box {
@@ -4976,14 +4975,14 @@ form.search-area input[type=text] {
 		left: 0px;
 	}
 	.ms_radio_wrapper {
-		margin: 60px 15px 60px 15px;
+		margin: 60px 15px;
 	}
 	.ms_featured_slider,
 	.ms_releases_wrapper {
 		margin: 60px 15px 60px 15px;
 	}
 	.ms_fea_album_slider {
-		margin: 160px 60px 0px 120px;
+		margin: 100px 120px 100px 160px;
 	}
 	.ms_footer_wrapper {
 		padding-left: 26px;
@@ -5525,6 +5524,7 @@ form.search-area input[type=text] {
 		width: 200px;
 	}
 	.ms_weekly_wrapper {
+		margin: 120px 15px;
 		padding-right: 30px;
 	}
 	.ms_sidemenu_wrapper.open_menu {
@@ -5546,12 +5546,12 @@ form.search-area input[type=text] {
 	.ms_weekly_wrapper {
 		padding-left: 15px;
 		padding-right: 25px;
+		margin: 120px 15px;
 	}
 	.ms_rcnt_slider,
 	.ms_featured_slider,
 	.ms_fea_album_slider {
-		margin-left: 15px;
-		margin-right: 15px;
+		margin: 160px 15px;
 	}
 	.slider_nav_next {
 		right: 0px;
@@ -5572,15 +5572,16 @@ form.search-area input[type=text] {
 	}
 	.ms_releases_wrapper {
 		padding: 0px 15px;
-		margin-right: 15px;
+		margin: 60px 15px;
 	}
+
 	.ms_releases_wrapper .slider_nav_prev,
 	.ms_releases_wrapper .slider_nav_next {
 		right: 14px;
 	}
 	.ms_genres_wrapper,
 	.ms_radio_wrapper {
-		margin: 60px 15px 60px 15px;
+	margin: 60px 15px;
 	}
 	.modal-dialog {
 		max-width: 94%;
@@ -5765,7 +5766,7 @@ form.search-area input[type=text] {
 		top: 0;
 	}
 	.ms_releases_wrapper {
-		margin-right: 15px;
+		margin: 60px 15px;
 	}
 	.ms_play_song {
 		padding: 14px 0px 10px 15px;
@@ -6500,8 +6501,7 @@ form.search-area input[type=text] {
 	.ms_rcnt_slider,
 	.ms_featured_slider,
 	.ms_fea_album_slider {
-		margin-left: 15px;
-		margin-right: 15px;
+		margin: 160px 15px;
 	}
 
 
@@ -6561,10 +6561,11 @@ form.search-area input[type=text] {
 	}
 	.ms_releases_wrapper {
 		padding-right: 15px;
+		margin: 60px 15px;
 	}
 	.ms_genres_wrapper,
 	.ms_radio_wrapper {
-		margin: 60px 15px 60px 15px;
+		margin: 60px 15px;
 	}
 	.ms_footer_logo {
 		padding-left: 0px;

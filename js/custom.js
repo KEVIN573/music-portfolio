@@ -1,9 +1,3 @@
-/*--------------------- Copyright (c) 2018 -----------------------
-[Master Javascript]
-Project: Miraculous - Online Music Store Html Template
-Version: 1.0.0
-Assigned to: Theme Forest
--------------------------------------------------------------------*/
 (function($) {
     "use strict";
     var music = {
@@ -28,8 +22,7 @@ Assigned to: Theme Forest
             this.showPlayList();
             this.volume();
         },
-        /*-------------- Music Functions definition ---------------------------------------------------
-        ---------------------------------------------------------------------------------------------------*/
+        /* Music Functions definition*/
         RTL: function() {
             var rtl_attr = $("html").attr('dir');
             if (rtl_attr) {
@@ -359,9 +352,9 @@ Assigned to: Theme Forest
                 $('#playlist-wrap ul li .action .que_more').not($(this)).closest('li').find('.more_option').removeClass('open_option');
                 $(this).closest('li').find('.more_option').toggleClass('open_option');
             });
-            // $('.jp-playlist').on('click', function(){
-            // $('#playlist-wrap ul li .more_option').removeClass('open_option');
-            // });
+            $('.jp-playlist').on('click', function(){
+            $('#playlist-wrap ul li .more_option').removeClass('open_option');
+            });
 
             $(document).on('click', function(e) {
                 if (!$(e.target).closest('.more_option').length && !$(e.target).closest('.action').length) {
