@@ -647,10 +647,6 @@ span.nav_text {
 	-ms-transform: translateY(-50%) rotate(180deg);
 }
 /*==== Header Css Start ====*/
-.ms_content_wrapper {
-	position: relative;
-	/* margin-left: 80px; */
-}
 .ms_header {
 	display: flex;
 	justify-content: space-between;
@@ -854,7 +850,7 @@ ul.ms_lang_box:after {
 }
 
 /*====Banner Css Start====*/
-.ms-banner {
+.banner-section{
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -866,7 +862,7 @@ ul.ms_lang_box:after {
 	left: 80px;
 }
 
-.ms_banner_text {
+.banner-content {
 	font-family: "Montserrat";
 	display: flex;
 	flex-direction: column;
@@ -874,20 +870,21 @@ ul.ms_lang_box:after {
 	justify-content: center;
 	position: absolute;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	left: 0;
+	top: 0;
 }
 
-.ms_banner_text h4{
+.banner-content h4{
 	color: #b1d4e0;
 	margin-bottom: 26px;
 }
 
-.ms_banner_text h1 span{
+.banner-content h1 span{
 	color: #e67c33;
 }
 
-.ms_banner_text .ms_banner_btn {
+.banner-content .ms_banner_btn {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -895,7 +892,7 @@ ul.ms_lang_box:after {
 	height: auto;
 }
 
-.ms_banner_text .ms_banner_btn a {
+.banner-content .ms_banner_btn a {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 400;
@@ -910,11 +907,11 @@ ul.ms_lang_box:after {
 
 }
 
-.ms_banner_text .ms_banner_btn a:hover{
+.banner-content .ms_banner_btn a:hover{
 	color: #b1d4e0;
 }
 
-.ms_banner_text .ms_banner_btn a:before{
+.banner-content .ms_banner_btn a:before{
 	position: absolute;
 	content: ""; 
 	top: 0px;
@@ -927,40 +924,41 @@ ul.ms_lang_box:after {
 	z-index: 1;
 }
 
-.ms_banner_text .ms_banner_btn a:hover:before{
+.banner-content .ms_banner_btn a:hover:before{
 	width: 170%;
 }
 
-.ms_banner_text .ms_banner_btn a span{
+.banner-content .ms_banner_btn a span{
 	position: relative;
 	z-index: 9;
 }
 
-.ms_banner_text h1 {
+.banner-content h1 {
 	font-size: 45px;
 	font-weight: bold;
 	color: #b1d4e0;
 	margin-bottom: 10px;
 }
 
-.ms_banner_text p {
+.banner-content p {
 	color: #b1d4e0;
 	text-transform: capitalize;
 }
 /*====Recent Music Slider====*/
-.ms_rcnt_slider {
+.video-section {
 	position: relative;
 	margin: 160px 120px 60px 160px;
 	padding-bottom: 0;
 }
-.ms_heading {
+.section-headings {
 	width: 100%;
 	margin-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
-.ms_heading h1 {
+.section-headings h1 {
 	font-size: 18px;
 	position: relative;
 	text-transform: capitalize;
@@ -973,7 +971,7 @@ ul.ms_lang_box:after {
 .veiw_all a:hover {
 	color: #3498db;
 }
-.ms_heading h1:after {
+.section-headings h1:after {
 	width: 100px;
 	height: 5px;
 	content: "";
@@ -1021,7 +1019,7 @@ ul.ms_lang_box:after {
 .w_top_song .w_tp_song_name h3 a:hover {
 	color: #3498db;
 }
-.ms_rcnt_slider .swiper-container {
+.video-section .swiper-container {
 	/* margin: 0px 0px; */
 	
 }
@@ -1286,7 +1284,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 .ms_weekly_wrapper {
 	margin: 100px 120px 120px 160px;
 }
-.ms_weekly_wrapper .ms_heading {
+.ms_weekly_wrapper .section-headings {
 	margin-bottom: 10px;
 }
 .ms_weekly_box {
@@ -2906,7 +2904,7 @@ a.ms_btn.play_btn.btn_pause span.play_all {
 .ms_album_single_wrapper .ms_view_more {
 	width: 100%;
 }
-.ms_content_wrapper.ms_album_content {
+.ms_album_content {
 	padding-top: 52px;
 }
 .album_list_wrapper>ul {
@@ -3112,7 +3110,7 @@ ul.play_active_song .play_hover {
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.ms_content_wrapper.ms_artist_content {
+.ms_artist_content {
 	padding-top: 0px;
 }
 /*====Artist Single Page Css Start====*/
@@ -3978,13 +3976,13 @@ ul.pro_dropdown_menu li a:hover {
 	position: relative;
 	top: -35px;
 }
-.ms_account_wrapper .ms_heading {
+.ms_account_wrapper .section-headings {
 	margin-bottom: 70px;
 }
-.ms_account_wrapper .ms_acc_overview .ms_heading {
+.ms_account_wrapper .ms_acc_overview .section-headings {
 	margin-bottom: 35px;
 }
-.ms_account_wrapper .ms_heading h1:after {
+.ms_account_wrapper .section-headings h1:after {
 	left: 48%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -4075,10 +4073,10 @@ ul.pro_dropdown_menu li a:hover {
 	font-weight: 600;
 	margin: 0px;
 }
-.ms_upload_box .ms_heading h1 {
+.ms_upload_box .section-headings h1 {
 	font-size: 22px;
 }
-.ms_upload_box .ms_heading h1:after {
+.ms_upload_box .section-headings h1:after {
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -4769,10 +4767,10 @@ form.search-area input[type=text] {
 	.ms_banner_img {
 		max-width: 470px;
 	}
-	.ms_banner_text {
+	.banner-content {
 		width: 100%;
 	}
-	.ms_banner_text h1 {
+	.banner-content h1 {
 		font-size: 29px;
 	}
 	.ms_play_song {
@@ -4913,16 +4911,16 @@ form.search-area input[type=text] {
 	.ms_banner_img {
 		max-width: 50%;
 	}
-	.ms_banner_text h1 {
+	.banner-content h1 {
 		font-size: 27px;
 	}
-	.ms_banner_text {
+	.banner-content {
 		width: 100%;
 	}
-	.ms-banner {
+	.banner-section{
 		left: 0px;
 	}
-	.ms_banner_text .ms_banner_btn .ms_btn {
+	.banner-content .ms_banner_btn .ms_btn {
 		/* max-width: 125px; */
 	}
 	.jp-type-playlist {
@@ -5021,7 +5019,7 @@ form.search-area input[type=text] {
 	.ms_weekly_inner .ms_divider {
 		display: none;
 	}
-	.ms_content_wrapper.padder_top80 {
+	.padder_top80 {
 		/* padding-top: 70px !important; */
 	}
 	.ms_weekly_wrapper.ms_free_music .weekly_right {
@@ -5094,7 +5092,7 @@ form.search-area input[type=text] {
 		-ms-flex: 33.33%;
 		max-width: 33.33%;
 	}
-	.ms-banner {
+	.banner-section{
 		left: 90px;
 	}
 	
@@ -5253,7 +5251,7 @@ form.search-area input[type=text] {
 	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li>a {
 		font-size: 12px;
 	}
-	.ms_banner_text {
+	.banner-content {
 		width: 100%;
 	}
 	.ms_banner_img {
@@ -5553,7 +5551,7 @@ form.search-area input[type=text] {
 		width: 100px;
 	}
 
-	.ms_content_wrapper.padder_top80 {
+	.padder_top80 {
 		/* padding-top: 50px !important; */
 	}
 	.ms_nav_close i {
@@ -5632,13 +5630,13 @@ form.search-area input[type=text] {
 		padding-right: 25px; 
 		margin: 20px 15px 80px 15px;
 	}
-	.ms_rcnt_slider,
+	.video-section,
 	.ms_featured_slider,
 	.ms_fea_album_slider {
 		margin: 20px 15px 80px 15px;
 	}
 
-	.ms_rcnt_slider{
+	.video-section{
 		margin: 160px 15px 80px 15px;
 	}
 	.slider_nav_next {
@@ -5834,10 +5832,10 @@ form.search-area input[type=text] {
 	div#lang_modal {
 		padding-right: 0px !important;
 	}
-	.ms_banner_text h1 {
+	.banner-content h1 {
 		font-size: 23px;
 	}
-	.ms_banner_text .ms_banner_btn .ms_btn {
+	.banner-content .ms_banner_btn .ms_btn {
 		/* font-size: 13px; */
 	}
 	.jp_quality_optn.custom_select {
@@ -6344,14 +6342,14 @@ form.search-area input[type=text] {
 	.ms_top_right {
 		/* margin-top: 0px; */
 	}
-	.ms_banner_text p {
+	.banner-content p {
 		text-align: center;
 	}
 	.ms_plan_box ul li {
 		font-size: 15px;
 		margin-bottom: 5px;
 	}
-	.ms_account_wrapper .ms_heading {
+	.ms_account_wrapper .section-headings {
 		margin-bottom: 35px;
 	}
 	.ms_plan_img {
@@ -6473,7 +6471,7 @@ form.search-area input[type=text] {
 	.ms_pro_form .ms_btn {
 		margin-bottom: 10px;
 	}
-	.ms_heading h1 {
+	.section-headings h1 {
 		width: 100%;
 	}
 	.album_btn a.ms_btn {
@@ -6488,11 +6486,11 @@ form.search-area input[type=text] {
 	.ms_top_right .ms_top_lang:after {
 		display: none;
 	}
-	.ms_banner_text h1 {
+	.banner-content h1 {
 		font-size: 18px;
 		line-height: 26px;
 	}
-	.ms_banner_text .ms_banner_btn .ms_btn {
+	.banner-content .ms_banner_btn .ms_btn {
 		/* margin-right: 0px;
 		max-width: 100px;
 		font-size: 12px; */
@@ -6524,10 +6522,10 @@ form.search-area input[type=text] {
 	.ms_banner_btn {
 		/* text-align: center; */
 	}
-	.ms_banner_text h1 {
+	.banner-content h1 {
 		text-align: center;
 	}
-	.ms_banner_text .ms_banner_btn .ms_btn {
+	.banner-content .ms_banner_btn .ms_btn {
 		/* margin-bottom: 10px; */
 	}
 	.ms_main_wrapper.ms_profile .ms_header {
@@ -6567,17 +6565,17 @@ form.search-area input[type=text] {
 	.ms_lang_popup .modal-content p {
 		font-size: 12px !important;
 	}
-	.ms_banner_text .ms_banner_btn .ms_btn {
+	.banner-content .ms_banner_btn .ms_btn {
 		/* margin-right: 0px;
 		margin-bottom: 15px; */
 	}
-	.ms_rcnt_slider,
+	.video-section,
 	.ms_featured_slider,
 	.ms_fea_album_slider {
 		margin: 20px 15px 80px 15px;
 	}
 
-	.ms_rcnt_slider{
+	.video-section{
 		margin: 160px 15px 80px 15px;
 	}
 	.ms_sidemenu_wrapper.open_menu a {
@@ -6625,7 +6623,7 @@ form.search-area input[type=text] {
 	.w_song_time {
 		float: left;
 	}
-	.ms_heading h1 {
+	.section-headings h1 {
 		font-size: 15px;
 		width: 100%;
 	}
@@ -6815,7 +6813,7 @@ form.search-area input[type=text] {
 	.ms_main_wrapper.ms_profile .ms_header {
 		/* padding: 20px 15px 10px; */
 	}
-	.ms_upload_box .ms_heading h1 {
+	.ms_upload_box .section-headings h1 {
 		font-size: 14px;
 	}
 	.ms_pro_form .form-group {
