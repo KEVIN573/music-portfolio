@@ -956,7 +956,6 @@ ul.ms_lang_box:after {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 .section-headings h1 {
 	font-size: 18px;
@@ -1282,7 +1281,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 /*Top 5 Music section*/
 .ms_weekly_wrapper {
-	margin: 100px 120px 120px 160px;
+	margin: 160px 120px 120px 160px;
 }
 .ms_weekly_wrapper .section-headings {
 	margin-bottom: 10px;
@@ -1577,9 +1576,9 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	height: 25px;
 }
 /*====Featured Album Slider Css Start====*/
-.ms_fea_album_slider {
+.featured-album  {
 	position: relative;
-	margin: 60px 120px 120px 160px;
+	margin: 160px 120px 0px 160px;
 }
 /*====Top Genres Css Start====*/
 .ms_genres_wrapper {
@@ -5010,7 +5009,7 @@ form.search-area input[type=text] {
 		font-size: 22px;
 	}
 	.ms_weekly_wrapper {
-		margin: 20px 15px 80px 15px;
+		margin: 160px 15px 80px 15px;
 	}
 	.ms_weekly_box {
 		padding: 25px 0px 20px 0px;
@@ -5064,8 +5063,8 @@ form.search-area input[type=text] {
 	.ms_releases_wrapper {
 		margin: 80px 15px;
 	}
-	.ms_fea_album_slider {
-		margin: 20px 120px 160px 160px;
+	.featured-album  {
+		margin: 160px 120px 80px 160px;
 	}
 	.ms_footer_wrapper {
 		padding-left: 26px;
@@ -5607,7 +5606,7 @@ form.search-area input[type=text] {
 		width: 200px;
 	}
 	.ms_weekly_wrapper {
-		margin: 20px 15px 80px 15px;
+		margin: 160px 15px 80px 15px;
 		/* padding-right: 30px; */
 	}
 	.ms_sidemenu_wrapper.open_menu {
@@ -5628,12 +5627,12 @@ form.search-area input[type=text] {
 	}
 	.ms_weekly_wrapper {
 		padding-right: 25px; 
-		margin: 20px 15px 80px 15px;
+		margin: 160px 15px 80px 15px;
 	}
 	.video-section,
 	.ms_featured_slider,
-	.ms_fea_album_slider {
-		margin: 20px 15px 80px 15px;
+	.featured-album  {
+		margin: 160px 15px 80px 15px;
 	}
 
 	.video-section{
@@ -6566,8 +6565,8 @@ form.search-area input[type=text] {
 	}
 	.video-section,
 	.ms_featured_slider,
-	.ms_fea_album_slider {
-		margin: 20px 15px 80px 15px;
+	.featured-album  {
+		margin: 160px 15px 80px 15px;
 	}
 
 	.video-section{
